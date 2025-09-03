@@ -1,0 +1,8 @@
+Defaulting to user installation because normal site-packages is not writeable
+Collecting Pillow
+  Obtaining dependency information for Pillow from https://files.pythonhosted.org/packages/23/85/397c73524e0cd212067e0c969aa245b01d50183439550d24d9f55781b776/pillow-11.3.0-cp313-cp313-win_amd64.whl.metadata
+  Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl.metadata (9.2 kB)
+Downloading pillow-11.3.0-cp313-cp313-win_amd64.whl (7.0 MB)
+   ---------------------------------------- 7.0/7.0 MB 15.0 kB/s eta 0:00:00
+Installing collected packages: Pillow
+Successfully installed Pillow-11.3.0
