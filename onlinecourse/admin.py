@@ -1,5 +1,5 @@
 from django.contrib import admin
-# <HINT> Import any new Models here
+from .models import Course, Lesson, Instructor, Learner, Question, Choice, Submission
 from .models import Course, Lesson, Instructor, Learner
 
 # <HINT> Register QuestionInline and ChoiceInline classes here
