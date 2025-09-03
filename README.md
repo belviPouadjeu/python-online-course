@@ -27,15 +27,46 @@ You are provided with commented out `Submission` model, which has:
 You need to uncomment the `Submission` model and use it to associate selected choices.
 
 
+# Task 4: Test Data
 
+You will now create test data for your application.
 
+## Add Instructor
 
+Add `admin` as an Instructor
 
+## Course Information
 
+| Field | Value |
+|-------|-------|
+| Name | Learning Django |
+| Image | Download from here |
+| Description | Django is an extremely popular and fully featured server-side web framework, written in Python |
+| Pub date | Today |
+| Instructors | admin |
 
+### Lesson Information
 
+| Field | Value |
+|-------|-------|
+| Lesson #1 Title | What is Django |
+| Lesson #1 Order | 0 |
+| Lesson #1 Content | Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of web development, so you can focus on writing your app without needing to reinvent the wheel. It's free and open source. |
 
-**ER Diagram**
-For your reference, we have prepared the ER diagram design for the new assesement feature.
+## Test Question
 
-![Onlinecourse ER Diagram](https://github.com/ibm-developer-skills-network/final-cloud-app-with-database/blob/master/static/media/course_images/onlinecourse_app_er.png)
+| Field | Value |
+|-------|-------|
+| Course | Name: Learning Django, Description: ... |
+| Content | Is Django a Python framework |
+| Grade | 100 |
+
+### Choices
+
+| Field | Value |
+|-------|-------|
+| Choice #1 Content | Yes |
+| Choice #1 Is correct | ✓ |
+| Choice #2 Content | No |
+| Choice #2 Is correct | *Leave blank* |
+
