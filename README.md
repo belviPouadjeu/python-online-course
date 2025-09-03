@@ -1,13 +1,39 @@
+# Django Models Specification
 
-**General Notes**
+## Question Model
 
-An `onlinecourse` app has already been provided in this repo upon which you will be adding a new assesement feature.
+A `Question` model will save the questions of an exam with the following characteristics:
 
-- If you want to develop the final project on Theia hosted by [IBM Developer Skills Network](https://labs.cognitiveclass.ai/), you will need to create the same project structure on Theia workspace and save it everytime you close the browser
-- Or you could develop the final project locally by setting up your own Python runtime and IDE
-- Hints for the final project are left on source code files
-- You may choose any cloud platform for deployment (default is IBM Cloud Foundry)
-- Depends on your deployment, you may choose any SQL database Django supported such as SQLite3, PostgreSQL, and MySQL (default is SQLite3)
+* Used to persist questions for a course
+* Has a Many-To-One relationship with the course
+* Has question text
+* Has a grade point for each question
+
+## Choice Model
+
+A `Choice` model saves all of the choices of a question:
+
+* Many-To-One relationship with `Question` model
+* The choice text
+* Indicates if this choice is the correct one or not
+
+## Submission Model
+
+You are provided with commented out `Submission` model, which has:
+
+* Many-to-One relationships with Exam Submissions, for example, multiple exam submissions could belong to one course enrollment.
+* Many-to-Many relationship with choices or questions. For simplicity, you could relate the submission with the Choice model
+
+You need to uncomment the `Submission` model and use it to associate selected choices.
+
+
+
+
+
+
+
+
+
 
 **ER Diagram**
 For your reference, we have prepared the ER diagram design for the new assesement feature.
